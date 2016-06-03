@@ -1,0 +1,895 @@
+@font-face {
+  font-family: MontserratDisplayThin;
+  src: url("Montserrat-Hairline.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: MontserratTextLight;
+  src: url("Montserrat-Light.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: MontserratDisplayTextMedium;
+  src: url("Montserrat-Regular.otf");
+  font-weight: bold;
+}
+        [data-fade] {
+          opacity: 0;
+          transition: opacity 1s ease-out;
+          -webkit-transition: opacity 1s ease-out;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+        }
+        a:hover {
+          opacity: 0.5;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: MontserratTextLight;
+            -webkit-font-smoothing: antialiased;
+            background-color: #0c0d2a;
+
+        }
+        .body-text {
+            font-family: MontserratTextLight;
+        }
+        .title-text {
+          font-size: 80px;
+          line-height: 1;
+        }
+        .cinema-club-section {
+          overflow: hidden;
+          background-size: cover;
+          background-image: url("background-gradient.svg");
+          width: 100%;
+          color: #fefefe;
+          margin: 0;
+          height: 1550px;
+          padding: 0;
+          position: relative;
+        }
+        .cinema-club-container {
+          max-width: 1200px;
+          width: 90%;
+          height: 100%;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        .cinema-club-title img {
+            width: 250px;
+        }
+        .cinema-club-title {
+            width: 374px;
+            font-size: 120px;
+            line-height: 0.9;
+            color: #f7f7f7;
+            margin: 90px 0 0 0;
+            position: absolute;
+        }
+
+        .cinema-club-subtitles {
+            height: 172px;
+            font-size: 36px;
+            color: #e9eae9;
+            margin: 350px 0 0 0;
+            position: absolute;
+        }
+
+        .get-the-app-top {
+            float: right;
+            text-align: center;
+            position: relative;
+            top: 90px;
+            right: 0;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+
+        }
+        .icons-small {
+            margin: 30px 0 30px 0;
+
+        }
+        .ios-icon-small {
+            width: 175px;
+            height: 50px;
+            background: url("appStore.png") no-repeat;
+            background-size: contain;
+            display: block;
+
+            cursor: pointer;
+            margin: 0 auto;
+        }
+        .ios-icon-small:hover {
+          opacity: 0.5;
+        }
+        .android-icon-small {
+            width: 175px;
+            height: 50px;
+            background: url("gPlay.png") no-repeat;
+            background-size: contain;
+            display: block;
+            margin: 30px auto 0 auto;
+            cursor: pointer;
+        }
+        .android-icon-small:hover {
+          opacity: 0.5;
+        }
+        .get-the-free-app-text {
+            margin: 15px 20px 25px 20px;
+            font-size: 23px;
+            color: #f2f2f2;
+        }
+        .send-a-link-small-button {
+            font-family: MontserratDisplayTextMedium;
+            width: 257px;
+            height: 52px;
+            border-radius: 2px;
+            background-color: #f2f2f2;
+            font-size: 17px;
+            letter-spacing: 1px;
+            color: #262e36;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+        .send-a-link-small-button:hover {
+          opacity: 0.5;
+        }
+
+        .home-01 {
+          background: url("home-01.png") no-repeat;
+          background-position: center bottom;
+          background-size: contain;
+          width: 631px;
+          height: 746px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          margin-left: -450px;
+        }
+        .home-02 {
+          background: url("home-02.png") no-repeat;
+          background-size: contain;
+          background-position: center bottom;
+          width: 631px;
+          height: 1084px;
+          position: absolute;
+          bottom: 0;
+          margin: 0 100px 0 0;
+          right: 0;
+        }
+
+
+        .every-movie-section {
+            overflow: hidden;
+            background-color: #FF694F;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            color: #262e36;
+            height: 900px;
+        }
+        .every-movie-container {
+            max-width: 1200px;
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .every-movie-01 {
+          background: url("every-movie-01.png") no-repeat;
+          background-position: center bottom;
+          background-size: contain;
+          width: 557px;
+          height: 661px;
+          left: 50%;
+          bottom: 50px;
+          position: absolute;
+          margin-left: -278px;
+        }
+        .every-movie-02 {
+          background: url("every-movie-02.png") no-repeat;
+          background-position: center bottom;
+          background-size: contain;
+          width: 363px;
+          height: 451px;
+          left: 50%;
+          bottom: 0;
+          position: absolute;
+          margin-left: -400px;
+        }
+        .every-movie-03 {
+          background: url("every-movie-03.png") no-repeat;
+          background-position: center bottom;
+          background-size: contain;
+          width: 363px;
+          height: 336px;
+          right: 50%;
+          margin-right: -400px;
+          bottom: 0;
+          position: absolute;
+
+        }
+
+        .every-movie-title {
+            margin-top: 110px;
+            text-align: center;
+        }
+        .every-movie-text {
+            max-width: 793px;
+            font-size: 26px;
+            line-height: 1.5;
+            color: #262e36;
+            text-align: center;
+            margin: auto;
+            margin-top: 36px;
+            opacity: 0.8;
+
+        }
+        .every-showtime-section {
+            overflow: hidden;
+            background-color: #FCDA33;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 1150px;
+        }
+        .every-showtime-container {
+            max-width: 1100px;
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .every-showtime-datePicker {
+          background: url("every-showtime-datePicker.png") no-repeat;
+          background-position: center top;
+          background-size: contain;
+          width: 526px;
+          height: 143px;
+          left: 50%;
+          bottom: 700px;
+          position: absolute;
+          margin-left: -263px;
+        }
+        .every-showtime-cinemas {
+          background: url("every-showtime-cinemas.png") no-repeat;
+          background-position: center bottom;
+          background-size: contain;
+          width: 431px;
+          height: 374px;
+          left: 50%;
+          bottom: 300px;
+          position: absolute;
+          margin-left: -400px;
+        }
+        .every-showtime-films {
+          background: url("every-showtime-films.png") no-repeat;
+          background-position: center bottom;
+          background-size: contain;
+          width: 431px;
+          height: 498px;
+          left: 50%;
+          bottom: 100px;
+          position: absolute;
+          margin-left: 0px;
+        }
+        .every-showtime-title {
+            font-size: 80px;
+            color: #262e36;
+            text-align: center;
+            margin-top: 110px;
+        }
+        .every-showtime-text {
+            max-width: 793px;
+            font-size: 26px;
+            line-height: 1.5;
+            color: #262e36;
+            text-align: center;
+            margin: auto;
+            margin-top: 34px;
+        }
+        .every-cinema-section {
+            overflow: hidden;
+            background-color: #9DEB0F;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 1024px;
+            color: #262e36;
+        }
+        .every-cinema-container {
+            height: 100%;
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+          }
+
+        .every-cinema-block {
+            text-align: left;
+            width: 450px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            margin: 110px 0 0 0;
+        }
+        .every-cinema-01 {
+          background-image: url("every-cinema-01.png");
+          background-position: 0 bottom;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 738px;
+          height: 862px;
+          bottom: -200px;
+          left: 50%;
+          margin-left: -700px;
+          position: absolute;
+        }
+
+        .every-cinema-02 {
+          background-image: url("every-cinema-02.png");
+          background-position: 0 bottom;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 744px;
+          height: 454px;
+          bottom: -50px;
+          left: 50%;
+          margin-left: -200px;
+          position: absolute;
+        }
+
+
+        .every-cinema-title {
+            font-size: 80px;
+            color: #262e36;
+        }
+        .every-cinema-text {
+            max-width: 793px;
+            opacity: 0.8;
+            font-size: 26px;
+            line-height: 1.5;
+            color: #262e36;
+            margin-top: 50px;
+        }
+        .get-the-app-section {
+            overflow: hidden;
+            background-color: #48B5FB;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 824px;
+            position: relative;
+        }
+        .get-the-app-container {
+          width: 90%;
+          margin: 0 5%;
+        }
+
+        .get-the-app-title {
+            font-size: 100px;
+            color: #ffffff;
+
+            text-align: center;
+            width: 90%;
+            margin: 110px auto 0 auto;
+        }
+        .get-app-links-large {
+            max-width: 795px;
+            margin: 100px auto 0 auto;
+
+        }
+        .icons-large {
+            width: 220px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .ios-icon-large {
+            background: url("appStore.png") no-repeat;
+            background-size: contain;
+            width: 220px;
+            height: 80px;
+            display: block;
+
+        }
+
+        .android-icon-large {
+            background: url("gPlay.png") no-repeat;
+            background-size: contain;
+            width: 220px;
+            height: 80px;
+            display: block;
+            margin-top: 30px;
+        }
+        .ios-icon-large:hover {
+          opacity: 0.8;
+        }
+        .android-icon-large:hover {
+          opacity: 0.8;
+        }
+        .or-section {
+            display: none;
+        }
+        .or-line {
+            max-width: 791px;
+            height: 1px;
+            opacity: 0.3;
+            border-top: solid 1px #262e36;
+            margin-top: 85px;
+            margin-bottom: 85px;
+        }
+        .or-text {
+            text-transform: uppercase;
+            width: 71px;
+            height: 53px;
+            background-color: #f56d31;
+            font-size: 24px;
+            letter-spacing: 1px;
+            color: #000000;
+            margin: 0 auto;
+            margin-top: -13px;
+            text-align: center;
+        }
+        .send-a-link-block {
+            width: 700px;
+            margin: auto;
+        }
+        .country-prefix {
+            height: 43px;
+            font-size: 36px;
+            color: #000000;
+            display: inline-block;
+        }
+        .your-number {
+            margin-left: 23px;
+            height: 43px;
+            opacity: 0.4;
+            font-size: 36px;
+            color: #000000;
+            display: inline-block;
+            margin-right: 43px;
+        }
+        .send-a-link-large-button {
+            width: 363px;
+            height: 71px;
+            border-radius: 100px;
+            background-color: rgba(22,28,32, 0.1);
+            border: solid 1px rgba(38,46,54, 0.1);
+            font-size: 36px;
+            color: #000000;
+            font-weight: 100;
+        }
+        .entertainment-eggheads {
+            position: absolute;
+            width: 90%;
+            padding: 0;
+            left: 5%;
+            bottom: 20px;
+            text-align: center;
+        }
+        @media (max-width: 1200px) {
+
+            .cinema-club-section {
+              height: 1450px;
+            }
+                .home-01 {
+                  width: 631px;
+                  height: 746px;
+                  left: 0;
+                  margin: 0 0 0 -50px;
+                }
+                .home-02 {
+                  width: 631px;
+                  height: 1084px;
+                  right: 0;
+                  margin: 0 0 0 0;
+                }
+            .every-movie-section {
+                height: 950px;
+            }
+                .every-movie-container {
+                    max-width: 1200px;
+                }
+                .every-movie-title {
+                    margin-top: 80px;
+                }
+                .every-movie-text {
+                    margin-top: 52px;
+                }
+
+            .every-showtime-section {
+                height: 1127px
+            }
+                .every-showtime-container {
+                    max-width: 900px;
+                }
+                .every-showtime-title {
+                    margin-top: 80px;
+                }
+                .every-showtime-text {
+                    margin-top: 36px;
+                }
+
+            .every-cinema-section {
+                height: 1050px;
+            }
+                .every-cinema-container {
+                    max-width: 900px;
+                    text-align: center;
+                    background-position: center bottom;
+                }
+
+                .every-cinema-block {
+                    width: 100%;
+                    height: 100%;
+                    margin: 80px 0 0 0;
+                    padding: 0;
+                    right: 0;
+                    text-align: center;
+                }
+
+                .every-cinema-title {
+                    font-size: 80px;
+                    color: #262e36;
+                }
+
+                .every-cinema-text {
+                    font-size: 26px;
+                    max-width: 1200px;
+                    margin: 50px 0;
+                    text-align: center;
+                }
+                .every-cinema-01 {
+                  margin-left: -520px;
+                }
+              .get-the-app-title {
+                margin-top: 80px;
+              }
+
+
+        }
+        @media (max-width: 900px) {
+
+            .cinema-club-section {
+                height: 1250px;
+            }
+                .cinema-club-container {
+                    max-width: 900px;
+                }
+                .get-the-app-top {
+                    width: 100%;
+                    height: 50px;
+                    position: fixed;
+                    margin-top: -90px;
+                    text-align: center;
+                    z-index: 1000;
+                    border: none;
+                    padding: 10px 0;
+                }
+                .get-the-free-app-text {
+                    display: none;
+
+
+
+                }
+                .icons-small {
+                   width: 400px;
+                   height: 50px;
+                   margin: 0 auto;
+                }
+                .ios-icon-small {
+                    display: inline-block;
+                    float: left;
+                }
+                .android-icon-small {
+
+
+                    display: inline-block;
+                    float: right;
+                    margin: 0;
+                }
+                .send-a-link-small-button {
+                    font-family: MontserratDisplayTextMedium;
+                    width: 240px;
+                    height: 52px;
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                    color: #262e36;
+                    text-transform: uppercase;
+                    border: none;
+                    cursor: pointer;
+                    float: left;
+                    margin: 0 0 0 30px;
+                    display: none;
+                }
+
+                .cinema-club-title {
+                    font-size: 80px;
+                    text-align: center;
+                    width: 100%;
+                    margin-left: 0px;
+                }
+                .cinema-club-subtitles {
+                    width: 100%;
+                    font-size: 36px;
+                    text-align: center;
+                    margin-left: 0px;
+                    margin-top: 250px;
+                }
+                .home-01 {
+                  width: 500px;
+                  height: 650px;
+                  left: 50%;
+                  bottom: 0;
+                  margin: 0 0 0 -350px;
+                }
+                .home-02 {
+                  width: 600px;
+                  height: 760px;
+                  right: 50%;
+                  bottom: 0;
+                  margin: 0 -400px 0 0;
+                }
+
+            .every-movie-section {
+                height: 850px
+            }
+                .every-movie-container {
+                    max-width: 900px;
+                }
+                .every-movie-02 {
+                  left: 0;
+                  margin-left: 0;
+                }
+                .every-movie-03 {
+                  right: 0;
+                  width: 363px;
+                  height: 336px;
+                  margin-right: 0;
+
+                }
+                .every-movie-title {
+                    margin-top: 60px;
+                    font-size: 64px;
+                }
+                .every-movie-text {
+                    margin-top: 25px;
+                    font-size: 22px;
+                }
+
+            .every-showtime-section {
+                height: 1050px
+            }
+                .every-showtime-title {
+                    font-size: 64px;
+                    margin-top: 60px;
+                }
+                .every-showtime-text {
+                    font-size: 22px;
+                }
+                .every-showtime-datePicker {
+                  width: 526px;
+                  height: 143px;
+                  left: 50%;
+                  bottom: 650px;
+                  margin-left: -263px;
+                }
+                .every-showtime-cinemas {
+                  width: 400px;
+                  height: 374px;
+                  left: 0;
+                  bottom: 300px;
+                  margin-left: 0px;
+                }
+                .every-showtime-films {
+                  width: 400px;
+                  height: 498px;
+                  left: 100%;
+                  bottom: 100px;
+                  margin-left: -400px;
+                }
+
+            .every-cinema-section {
+                height: 700px;
+            }
+                .every-cinema-block {
+                    margin: 0 0 0 0;
+                }
+                .every-cinema-title {
+                    font-size: 64px;
+                }
+                .every-cinema-text {
+                    max-width: 793px;
+                    font-size: 22px;
+                    margin-top: 36px;
+                }
+                .every-cinema-01 {
+                    left: 0;
+                    margin-left: 0;
+                    width: 450px;
+                }
+                .every-cinema-02 {
+                    left: 100%;
+                    width: 450px;
+                    margin-left: -400px;
+                }
+
+            .get-the-app-section {
+                height: 568px;
+                overflow: hidden;
+            }
+                .get-the-app-title {
+                    font-size: 64px;
+                    margin-top: 60px;
+                }
+                .or-section {
+                    display: none;
+                }
+        }
+        @media (max-width: 600px) {
+          .get-the-app-top {
+            height: 40px;
+            position: absolute;
+          }
+              .send-a-link-small-button {
+                display: none;
+              }
+              .get-the-free-app-text {
+                float: left;
+              }
+              .icons-small {
+                 width: 280px;
+                 height: 37px;
+                 margin: 0 auto;
+              }
+              .ios-icon-small {
+                  width: 130px;
+              }
+              .android-icon-small {
+                  width: 130px;
+                  margin: 0;
+              }
+          .cinema-club-section {
+              height: 1000px;
+              width: 100%;
+              margin: 0;
+          }
+            .home-01 {
+              width: 300px;
+              height: 350px;
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              margin-left: -180px;
+            }
+            .home-02 {
+              width: 300px;
+              height: 500px;
+              position: absolute;
+              right: 50%;
+              bottom: 0;
+              margin: 0 -180px 0 0;
+            }
+            .cinema-club-title {
+                width: 100%;
+                font-size: 80px;
+                text-align: center;
+            }
+            .cinema-club-subtitles {
+              margin-top: 265px;
+              text-align: center;
+              width: 100%;
+            }
+          .every-movie-section {
+              height: 830px;
+          }
+            .every-movie-01 {
+              width: 700px;
+              height: 450px;
+              margin-left: -300px;
+            }
+            .every-movie-title {
+              width: 100%;
+              margin: 80px auto 0 auto;
+              text-align: center;
+            }
+            .every-movie-02 {
+              width: 200px;
+              margin-left: 20px;
+            }
+            .every-movie-03 {
+              display: none;
+            }
+          .every-showtime-section {
+            height: 975px;
+          }
+            .every-showtime-title {
+              width: 90%;
+              margin: 80px auto 0 auto;
+              text-align: center;
+            }
+
+            .every-showtime-datePicker {
+              width: 300px;
+              height: 150px;
+              bottom: 400px;
+              left: 50%;
+              margin-left: -150px;
+            }
+            .every-showtime-cinemas {
+              display: none;
+            }
+            .every-showtime-films {
+              width: 320px;
+              left: 50%;
+              bottom: 20px;
+              margin-left: -160px;
+            }
+
+          .every-cinema-section {
+            height: 800px;
+          }
+            .every-cinema-title {
+              width: 80%;
+            margin: 80px auto 0 auto;
+            }
+            .every-cinema-01 {
+                left: 50%;
+                margin-left: -250px;
+                width: 380px;
+            }
+            .every-cinema-02 {
+                left: 50%;
+                width: 380px;
+                margin-left: -60px;
+
+            }
+
+            .get-the-app-title {
+              margin-top: 80px;
+            }
+            .get-app-links-large {
+                max-width: 795px;
+                margin: 60px auto 0 auto;
+            }
+
+            .ios-icon-large {
+                background: url("appStore.png") no-repeat;
+                background-size: contain;
+                width: 200px;
+                height: 57px;
+                display: inline-block;
+            }
+            .android-icon-large {
+                background: url("gPlay.png") no-repeat;
+                background-size: contain;
+                width: 200px;
+                height: 57px;
+                display: inline-block;
+                margin-top: 30px;
+            }
+          }
+          @media (min-width: 400px) and (max-width: 600px) {
+              .every-showtime-section {
+                height: 900px;
+              }
+              .every-showtime-title {
+                width: 60%;
+                margin: 80px auto 0 auto;
+              }
+              .every-cinema-title {
+                width: 50% !important;
+                margin: 0 auto;
+              }
+
+          }
