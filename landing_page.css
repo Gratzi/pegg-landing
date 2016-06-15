@@ -144,7 +144,7 @@
         }
 
         .home-01 {
-          background: url("home-01.png") no-repeat;
+          background: url("images/splash2-iPhone6.png") no-repeat;
           background-position: center bottom;
           background-size: contain;
           width: 631px;
@@ -155,7 +155,7 @@
           margin-left: -450px;
         }
         .home-02 {
-          background: url("home-02.png") no-repeat;
+          background: url("images/splash-iPhone6.png") no-repeat;
           background-size: contain;
           background-position: center bottom;
           width: 631px;
@@ -184,7 +184,7 @@
             position: relative;
         }
         .every-movie-01 {
-          background: url("every-movie-01.png") no-repeat;
+          background: url("images/getReal-Android.png") no-repeat;
           background-position: center bottom;
           background-size: contain;
           width: 557px;
@@ -195,7 +195,7 @@
           margin-left: -278px;
         }
         .every-movie-02 {
-          background: url("every-movie-02.png") no-repeat;
+          background: url("images/getReal3-Android.png") no-repeat;
           background-position: center bottom;
           background-size: contain;
           width: 363px;
@@ -206,7 +206,7 @@
           margin-left: -400px;
         }
         .every-movie-03 {
-          background: url("every-movie-03.png") no-repeat;
+          background: url("images/getReal2-Android.png") no-repeat;
           background-position: center bottom;
           background-size: contain;
           width: 363px;
